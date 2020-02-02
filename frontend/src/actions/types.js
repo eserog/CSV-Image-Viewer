@@ -1,0 +1,3 @@
+export const FETCH_IMAGES = 'FETCH_PICTURES';
+export const UPLOAD_CSV = 'UPLOAD_CSV';
+export const TOGGLE_GRAYSCALE = 'TOGGLE_GRAYSCALE';

@@ -1,0 +1,68 @@
+Arguments: 
+  /usr/local/Cellar/node/12.12.0/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/esaserog/.rvm/gems/ruby-2.3.0/bin:/Users/esaserog/.rvm/gems/ruby-2.3.0@global/bin:/Users/esaserog/.rvm/rubies/ruby-2.3.0/bin:/Users/esaserog/.rbenv/shims:/Users/esaserog/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Users/esaserog/.rvm/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/esaserog/work/projects/goTennaEsa/frontend/package.json: Unexpected token / in JSON at position 781
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "go_tenna_esa_frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "axios": "^0.19.2",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "react-scripts": "3.3.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+    // "devDependencies": {
+    //   "webpack": "^4.41.5"
+    // }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
