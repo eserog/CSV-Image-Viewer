@@ -44281,3 +44281,1360 @@ Processing by PictureController#show_batch as HTML
 Completed 200 OK in 15210ms (Views: 0.3ms | ActiveRecord: 0.5ms)
 
 
+Started POST "/csv_file" for ::1 at 2020-02-02 18:18:35 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CsvFileController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c60a03d10 @tempfile=#<Tempfile:/var/folders/1_/pk6p99d94sj385sd_hy8th5w0000gn/T/RackMultipart20200202-67945-kqq68l.csv>, @original_filename="test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.csv\"\r\nContent-Type: text/csv\r\n">}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "csv_files" ("csv_file_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["csv_file_name", "test.csv"], ["created_at", "2020-02-02 23:18:35.688055"], ["updated_at", "2020-02-02 23:18:35.688055"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/12/300/200"], ["created_at", "2020-02-02 23:18:35.722084"], ["updated_at", "2020-02-02 23:18:35.722084"], ["csv_file_id", 95]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/434/300/200"], ["created_at", "2020-02-02 23:18:35.725485"], ["updated_at", "2020-02-02 23:18:35.725485"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/966/300/200"], ["created_at", "2020-02-02 23:18:35.728228"], ["updated_at", "2020-02-02 23:18:35.728228"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/300/200"], ["created_at", "2020-02-02 23:18:35.730694"], ["updated_at", "2020-02-02 23:18:35.730694"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/180/300/200"], ["created_at", "2020-02-02 23:18:35.733178"], ["updated_at", "2020-02-02 23:18:35.733178"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/342/300/200"], ["created_at", "2020-02-02 23:18:35.735857"], ["updated_at", "2020-02-02 23:18:35.735857"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/467/300/200"], ["created_at", "2020-02-02 23:18:35.738822"], ["updated_at", "2020-02-02 23:18:35.738822"], ["csv_file_id", 95]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/389/300/200"], ["created_at", "2020-02-02 23:18:35.742579"], ["updated_at", "2020-02-02 23:18:35.742579"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/525/300/200"], ["created_at", "2020-02-02 23:18:35.745262"], ["updated_at", "2020-02-02 23:18:35.745262"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/300/200"], ["created_at", "2020-02-02 23:18:35.747775"], ["updated_at", "2020-02-02 23:18:35.747775"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/256/100/100"], ["created_at", "2020-02-02 23:18:35.750098"], ["updated_at", "2020-02-02 23:18:35.750098"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/70/100/100"], ["created_at", "2020-02-02 23:18:35.752454"], ["updated_at", "2020-02-02 23:18:35.752454"], ["csv_file_id", 95]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/844/100/100"], ["created_at", "2020-02-02 23:18:35.756066"], ["updated_at", "2020-02-02 23:18:35.756066"], ["csv_file_id", 95]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/130/100/100"], ["created_at", "2020-02-02 23:18:35.760788"], ["updated_at", "2020-02-02 23:18:35.760788"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/328/100/100"], ["created_at", "2020-02-02 23:18:35.764083"], ["updated_at", "2020-02-02 23:18:35.764083"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/886/100/100"], ["created_at", "2020-02-02 23:18:35.767008"], ["updated_at", "2020-02-02 23:18:35.767008"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/218/100/100"], ["created_at", "2020-02-02 23:18:35.769752"], ["updated_at", "2020-02-02 23:18:35.769752"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/29/100/100"], ["created_at", "2020-02-02 23:18:35.772954"], ["updated_at", "2020-02-02 23:18:35.772954"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/639/100/100"], ["created_at", "2020-02-02 23:18:35.776410"], ["updated_at", "2020-02-02 23:18:35.776410"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/396/100/100"], ["created_at", "2020-02-02 23:18:35.778978"], ["updated_at", "2020-02-02 23:18:35.778978"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/20/250/250"], ["created_at", "2020-02-02 23:18:35.781405"], ["updated_at", "2020-02-02 23:18:35.781405"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/925/250/250"], ["created_at", "2020-02-02 23:18:35.783847"], ["updated_at", "2020-02-02 23:18:35.783847"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/872/250/250"], ["created_at", "2020-02-02 23:18:35.786361"], ["updated_at", "2020-02-02 23:18:35.786361"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/629/250/250"], ["created_at", "2020-02-02 23:18:35.788756"], ["updated_at", "2020-02-02 23:18:35.788756"], ["csv_file_id", 95]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1074/250/250"], ["created_at", "2020-02-02 23:18:35.791716"], ["updated_at", "2020-02-02 23:18:35.791716"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/341/250/250"], ["created_at", "2020-02-02 23:18:35.794223"], ["updated_at", "2020-02-02 23:18:35.794223"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/267/250/250"], ["created_at", "2020-02-02 23:18:35.796689"], ["updated_at", "2020-02-02 23:18:35.796689"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1021/250/250"], ["created_at", "2020-02-02 23:18:35.799169"], ["updated_at", "2020-02-02 23:18:35.799169"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/928/250/250"], ["created_at", "2020-02-02 23:18:35.801719"], ["updated_at", "2020-02-02 23:18:35.801719"], ["csv_file_id", 95]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/238/250/250"], ["created_at", "2020-02-02 23:18:35.805466"], ["updated_at", "2020-02-02 23:18:35.805466"], ["csv_file_id", 95]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/400/200"], ["created_at", "2020-02-02 23:18:35.809612"], ["updated_at", "2020-02-02 23:18:35.809612"], ["csv_file_id", 95]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/319/400/200"], ["created_at", "2020-02-02 23:18:35.812740"], ["updated_at", "2020-02-02 23:18:35.812740"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1059/400/200"], ["created_at", "2020-02-02 23:18:35.815421"], ["updated_at", "2020-02-02 23:18:35.815421"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/71/400/200"], ["created_at", "2020-02-02 23:18:35.818002"], ["updated_at", "2020-02-02 23:18:35.818002"], ["csv_file_id", 95]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/400/200"], ["created_at", "2020-02-02 23:18:35.820561"], ["updated_at", "2020-02-02 23:18:35.820561"], ["csv_file_id", 95]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/118/400/200"], ["created_at", "2020-02-02 23:18:35.822987"], ["updated_at", "2020-02-02 23:18:35.822987"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/634/400/200"], ["created_at", "2020-02-02 23:18:35.826247"], ["updated_at", "2020-02-02 23:18:35.826247"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1065/400/200"], ["created_at", "2020-02-02 23:18:35.828821"], ["updated_at", "2020-02-02 23:18:35.828821"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1073/400/200"], ["created_at", "2020-02-02 23:18:35.831490"], ["updated_at", "2020-02-02 23:18:35.831490"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/323/400/200"], ["created_at", "2020-02-02 23:18:35.834039"], ["updated_at", "2020-02-02 23:18:35.834039"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/660/300/300"], ["created_at", "2020-02-02 23:18:35.836534"], ["updated_at", "2020-02-02 23:18:35.836534"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/511/300/300"], ["created_at", "2020-02-02 23:18:35.839589"], ["updated_at", "2020-02-02 23:18:35.839589"], ["csv_file_id", 95]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/339/300/300"], ["created_at", "2020-02-02 23:18:35.843130"], ["updated_at", "2020-02-02 23:18:35.843130"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/693/300/300"], ["created_at", "2020-02-02 23:18:35.845597"], ["updated_at", "2020-02-02 23:18:35.845597"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/198/300/300"], ["created_at", "2020-02-02 23:18:35.848022"], ["updated_at", "2020-02-02 23:18:35.848022"], ["csv_file_id", 95]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/964/300/300"], ["created_at", "2020-02-02 23:18:35.850309"], ["updated_at", "2020-02-02 23:18:35.850309"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/59/300/300"], ["created_at", "2020-02-02 23:18:35.852704"], ["updated_at", "2020-02-02 23:18:35.852704"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/160/300/300"], ["created_at", "2020-02-02 23:18:35.870266"], ["updated_at", "2020-02-02 23:18:35.870266"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/737/300/300"], ["created_at", "2020-02-02 23:18:35.874250"], ["updated_at", "2020-02-02 23:18:35.874250"], ["csv_file_id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/891/300/300"], ["created_at", "2020-02-02 23:18:35.878157"], ["updated_at", "2020-02-02 23:18:35.878157"], ["csv_file_id", 95]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pictures/95/1
+Completed 302 Found in 227ms (ActiveRecord: 65.0ms)
+
+
+Started GET "/pictures/95/1" for ::1 at 2020-02-02 18:18:35 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"csv_file_id"=>"95", "page"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 95], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 95], ["LIMIT", 25], ["OFFSET", 25]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pictures/95/2?grayscale=1" for ::1 at 2020-02-02 18:18:42 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"grayscale"=>"1", "csv_file_id"=>"95", "page"=>"2"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 95], ["LIMIT", 25], ["OFFSET", 25]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 95], ["LIMIT", 25], ["OFFSET", 50]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/csv_file?grayscale=1" for ::1 at 2020-02-02 18:20:47 -0500
+Processing by CsvFileController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c66404ff8 @tempfile=#<Tempfile:/var/folders/1_/pk6p99d94sj385sd_hy8th5w0000gn/T/RackMultipart20200202-67945-cdgz8e.csv>, @original_filename="test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.csv\"\r\nContent-Type: text/csv\r\n">, "grayscale"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "csv_files" ("csv_file_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["csv_file_name", "test.csv"], ["created_at", "2020-02-02 23:20:47.522688"], ["updated_at", "2020-02-02 23:20:47.522688"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/12/300/200"], ["created_at", "2020-02-02 23:20:47.526977"], ["updated_at", "2020-02-02 23:20:47.526977"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/434/300/200"], ["created_at", "2020-02-02 23:20:47.530037"], ["updated_at", "2020-02-02 23:20:47.530037"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/966/300/200"], ["created_at", "2020-02-02 23:20:47.533337"], ["updated_at", "2020-02-02 23:20:47.533337"], ["csv_file_id", 96]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/300/200"], ["created_at", "2020-02-02 23:20:47.537028"], ["updated_at", "2020-02-02 23:20:47.537028"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/180/300/200"], ["created_at", "2020-02-02 23:20:47.540142"], ["updated_at", "2020-02-02 23:20:47.540142"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/342/300/200"], ["created_at", "2020-02-02 23:20:47.542884"], ["updated_at", "2020-02-02 23:20:47.542884"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/467/300/200"], ["created_at", "2020-02-02 23:20:47.545612"], ["updated_at", "2020-02-02 23:20:47.545612"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/389/300/200"], ["created_at", "2020-02-02 23:20:47.548523"], ["updated_at", "2020-02-02 23:20:47.548523"], ["csv_file_id", 96]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/525/300/200"], ["created_at", "2020-02-02 23:20:47.552094"], ["updated_at", "2020-02-02 23:20:47.552094"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/300/200"], ["created_at", "2020-02-02 23:20:47.555289"], ["updated_at", "2020-02-02 23:20:47.555289"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/256/100/100"], ["created_at", "2020-02-02 23:20:47.558179"], ["updated_at", "2020-02-02 23:20:47.558179"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/70/100/100"], ["created_at", "2020-02-02 23:20:47.561052"], ["updated_at", "2020-02-02 23:20:47.561052"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/844/100/100"], ["created_at", "2020-02-02 23:20:47.563916"], ["updated_at", "2020-02-02 23:20:47.563916"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/130/100/100"], ["created_at", "2020-02-02 23:20:47.567299"], ["updated_at", "2020-02-02 23:20:47.567299"], ["csv_file_id", 96]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/328/100/100"], ["created_at", "2020-02-02 23:20:47.570661"], ["updated_at", "2020-02-02 23:20:47.570661"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/886/100/100"], ["created_at", "2020-02-02 23:20:47.574276"], ["updated_at", "2020-02-02 23:20:47.574276"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/218/100/100"], ["created_at", "2020-02-02 23:20:47.577051"], ["updated_at", "2020-02-02 23:20:47.577051"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/29/100/100"], ["created_at", "2020-02-02 23:20:47.579559"], ["updated_at", "2020-02-02 23:20:47.579559"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/639/100/100"], ["created_at", "2020-02-02 23:20:47.582440"], ["updated_at", "2020-02-02 23:20:47.582440"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/396/100/100"], ["created_at", "2020-02-02 23:20:47.585455"], ["updated_at", "2020-02-02 23:20:47.585455"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/20/250/250"], ["created_at", "2020-02-02 23:20:47.587923"], ["updated_at", "2020-02-02 23:20:47.587923"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/925/250/250"], ["created_at", "2020-02-02 23:20:47.590437"], ["updated_at", "2020-02-02 23:20:47.590437"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/872/250/250"], ["created_at", "2020-02-02 23:20:47.592856"], ["updated_at", "2020-02-02 23:20:47.592856"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/629/250/250"], ["created_at", "2020-02-02 23:20:47.595232"], ["updated_at", "2020-02-02 23:20:47.595232"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1074/250/250"], ["created_at", "2020-02-02 23:20:47.597834"], ["updated_at", "2020-02-02 23:20:47.597834"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/341/250/250"], ["created_at", "2020-02-02 23:20:47.600982"], ["updated_at", "2020-02-02 23:20:47.600982"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/267/250/250"], ["created_at", "2020-02-02 23:20:47.603683"], ["updated_at", "2020-02-02 23:20:47.603683"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1021/250/250"], ["created_at", "2020-02-02 23:20:47.606464"], ["updated_at", "2020-02-02 23:20:47.606464"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/928/250/250"], ["created_at", "2020-02-02 23:20:47.609066"], ["updated_at", "2020-02-02 23:20:47.609066"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/238/250/250"], ["created_at", "2020-02-02 23:20:47.611684"], ["updated_at", "2020-02-02 23:20:47.611684"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/400/200"], ["created_at", "2020-02-02 23:20:47.614337"], ["updated_at", "2020-02-02 23:20:47.614337"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/319/400/200"], ["created_at", "2020-02-02 23:20:47.617381"], ["updated_at", "2020-02-02 23:20:47.617381"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1059/400/200"], ["created_at", "2020-02-02 23:20:47.620103"], ["updated_at", "2020-02-02 23:20:47.620103"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/71/400/200"], ["created_at", "2020-02-02 23:20:47.622907"], ["updated_at", "2020-02-02 23:20:47.622907"], ["csv_file_id", 96]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/400/200"], ["created_at", "2020-02-02 23:20:47.635199"], ["updated_at", "2020-02-02 23:20:47.635199"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/118/400/200"], ["created_at", "2020-02-02 23:20:47.638610"], ["updated_at", "2020-02-02 23:20:47.638610"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/634/400/200"], ["created_at", "2020-02-02 23:20:47.641599"], ["updated_at", "2020-02-02 23:20:47.641599"], ["csv_file_id", 96]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1065/400/200"], ["created_at", "2020-02-02 23:20:47.644411"], ["updated_at", "2020-02-02 23:20:47.644411"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1073/400/200"], ["created_at", "2020-02-02 23:20:47.647092"], ["updated_at", "2020-02-02 23:20:47.647092"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/323/400/200"], ["created_at", "2020-02-02 23:20:47.650127"], ["updated_at", "2020-02-02 23:20:47.650127"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/660/300/300"], ["created_at", "2020-02-02 23:20:47.652840"], ["updated_at", "2020-02-02 23:20:47.652840"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/511/300/300"], ["created_at", "2020-02-02 23:20:47.655355"], ["updated_at", "2020-02-02 23:20:47.655355"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/339/300/300"], ["created_at", "2020-02-02 23:20:47.657758"], ["updated_at", "2020-02-02 23:20:47.657758"], ["csv_file_id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/693/300/300"], ["created_at", "2020-02-02 23:20:47.660156"], ["updated_at", "2020-02-02 23:20:47.660156"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/198/300/300"], ["created_at", "2020-02-02 23:20:47.662871"], ["updated_at", "2020-02-02 23:20:47.662871"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/964/300/300"], ["created_at", "2020-02-02 23:20:47.665793"], ["updated_at", "2020-02-02 23:20:47.665793"], ["csv_file_id", 96]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/59/300/300"], ["created_at", "2020-02-02 23:20:47.669075"], ["updated_at", "2020-02-02 23:20:47.669075"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/160/300/300"], ["created_at", "2020-02-02 23:20:47.672082"], ["updated_at", "2020-02-02 23:20:47.672082"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/737/300/300"], ["created_at", "2020-02-02 23:20:47.674834"], ["updated_at", "2020-02-02 23:20:47.674834"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/891/300/300"], ["created_at", "2020-02-02 23:20:47.677234"], ["updated_at", "2020-02-02 23:20:47.677234"], ["csv_file_id", 96]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pictures/96/1?grayscale=1
+Completed 302 Found in 158ms (ActiveRecord: 66.8ms)
+
+
+Started GET "/pictures/96/1?grayscale=1" for ::1 at 2020-02-02 18:20:47 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"grayscale"=>"1", "csv_file_id"=>"96", "page"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 96], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 96], ["LIMIT", 25], ["OFFSET", 25]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/csv_file?grayscale=1" for ::1 at 2020-02-02 18:21:20 -0500
+Processing by CsvFileController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c66484b40 @tempfile=#<Tempfile:/var/folders/1_/pk6p99d94sj385sd_hy8th5w0000gn/T/RackMultipart20200202-67945-ogf5mv.csv>, @original_filename="test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.csv\"\r\nContent-Type: text/csv\r\n">, "grayscale"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "csv_files" ("csv_file_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["csv_file_name", "test.csv"], ["created_at", "2020-02-02 23:21:20.036556"], ["updated_at", "2020-02-02 23:21:20.036556"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/12/300/200"], ["created_at", "2020-02-02 23:21:20.041180"], ["updated_at", "2020-02-02 23:21:20.041180"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/434/300/200"], ["created_at", "2020-02-02 23:21:20.045140"], ["updated_at", "2020-02-02 23:21:20.045140"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/966/300/200"], ["created_at", "2020-02-02 23:21:20.048966"], ["updated_at", "2020-02-02 23:21:20.048966"], ["csv_file_id", 97]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/300/200"], ["created_at", "2020-02-02 23:21:20.053420"], ["updated_at", "2020-02-02 23:21:20.053420"], ["csv_file_id", 97]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/180/300/200"], ["created_at", "2020-02-02 23:21:20.058383"], ["updated_at", "2020-02-02 23:21:20.058383"], ["csv_file_id", 97]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/342/300/200"], ["created_at", "2020-02-02 23:21:20.061921"], ["updated_at", "2020-02-02 23:21:20.061921"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/467/300/200"], ["created_at", "2020-02-02 23:21:20.065204"], ["updated_at", "2020-02-02 23:21:20.065204"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/389/300/200"], ["created_at", "2020-02-02 23:21:20.067990"], ["updated_at", "2020-02-02 23:21:20.067990"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/525/300/200"], ["created_at", "2020-02-02 23:21:20.070591"], ["updated_at", "2020-02-02 23:21:20.070591"], ["csv_file_id", 97]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/300/200"], ["created_at", "2020-02-02 23:21:20.073126"], ["updated_at", "2020-02-02 23:21:20.073126"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/256/100/100"], ["created_at", "2020-02-02 23:21:20.075872"], ["updated_at", "2020-02-02 23:21:20.075872"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/70/100/100"], ["created_at", "2020-02-02 23:21:20.078702"], ["updated_at", "2020-02-02 23:21:20.078702"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/844/100/100"], ["created_at", "2020-02-02 23:21:20.082437"], ["updated_at", "2020-02-02 23:21:20.082437"], ["csv_file_id", 97]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/130/100/100"], ["created_at", "2020-02-02 23:21:20.085994"], ["updated_at", "2020-02-02 23:21:20.085994"], ["csv_file_id", 97]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/328/100/100"], ["created_at", "2020-02-02 23:21:20.089408"], ["updated_at", "2020-02-02 23:21:20.089408"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/886/100/100"], ["created_at", "2020-02-02 23:21:20.092345"], ["updated_at", "2020-02-02 23:21:20.092345"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/218/100/100"], ["created_at", "2020-02-02 23:21:20.095162"], ["updated_at", "2020-02-02 23:21:20.095162"], ["csv_file_id", 97]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/29/100/100"], ["created_at", "2020-02-02 23:21:20.098209"], ["updated_at", "2020-02-02 23:21:20.098209"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/639/100/100"], ["created_at", "2020-02-02 23:21:20.101170"], ["updated_at", "2020-02-02 23:21:20.101170"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/396/100/100"], ["created_at", "2020-02-02 23:21:20.111192"], ["updated_at", "2020-02-02 23:21:20.111192"], ["csv_file_id", 97]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/20/250/250"], ["created_at", "2020-02-02 23:21:20.114951"], ["updated_at", "2020-02-02 23:21:20.114951"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/925/250/250"], ["created_at", "2020-02-02 23:21:20.118250"], ["updated_at", "2020-02-02 23:21:20.118250"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/872/250/250"], ["created_at", "2020-02-02 23:21:20.121688"], ["updated_at", "2020-02-02 23:21:20.121688"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/629/250/250"], ["created_at", "2020-02-02 23:21:20.126458"], ["updated_at", "2020-02-02 23:21:20.126458"], ["csv_file_id", 97]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1074/250/250"], ["created_at", "2020-02-02 23:21:20.149337"], ["updated_at", "2020-02-02 23:21:20.149337"], ["csv_file_id", 97]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/341/250/250"], ["created_at", "2020-02-02 23:21:20.152804"], ["updated_at", "2020-02-02 23:21:20.152804"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/267/250/250"], ["created_at", "2020-02-02 23:21:20.155865"], ["updated_at", "2020-02-02 23:21:20.155865"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1021/250/250"], ["created_at", "2020-02-02 23:21:20.158493"], ["updated_at", "2020-02-02 23:21:20.158493"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/928/250/250"], ["created_at", "2020-02-02 23:21:20.161052"], ["updated_at", "2020-02-02 23:21:20.161052"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/238/250/250"], ["created_at", "2020-02-02 23:21:20.163782"], ["updated_at", "2020-02-02 23:21:20.163782"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/400/200"], ["created_at", "2020-02-02 23:21:20.166330"], ["updated_at", "2020-02-02 23:21:20.166330"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/319/400/200"], ["created_at", "2020-02-02 23:21:20.168730"], ["updated_at", "2020-02-02 23:21:20.168730"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1059/400/200"], ["created_at", "2020-02-02 23:21:20.171173"], ["updated_at", "2020-02-02 23:21:20.171173"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/71/400/200"], ["created_at", "2020-02-02 23:21:20.173673"], ["updated_at", "2020-02-02 23:21:20.173673"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/400/200"], ["created_at", "2020-02-02 23:21:20.176129"], ["updated_at", "2020-02-02 23:21:20.176129"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/118/400/200"], ["created_at", "2020-02-02 23:21:20.178622"], ["updated_at", "2020-02-02 23:21:20.178622"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/634/400/200"], ["created_at", "2020-02-02 23:21:20.181242"], ["updated_at", "2020-02-02 23:21:20.181242"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1065/400/200"], ["created_at", "2020-02-02 23:21:20.183854"], ["updated_at", "2020-02-02 23:21:20.183854"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1073/400/200"], ["created_at", "2020-02-02 23:21:20.187050"], ["updated_at", "2020-02-02 23:21:20.187050"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/323/400/200"], ["created_at", "2020-02-02 23:21:20.190239"], ["updated_at", "2020-02-02 23:21:20.190239"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/660/300/300"], ["created_at", "2020-02-02 23:21:20.192750"], ["updated_at", "2020-02-02 23:21:20.192750"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/511/300/300"], ["created_at", "2020-02-02 23:21:20.195302"], ["updated_at", "2020-02-02 23:21:20.195302"], ["csv_file_id", 97]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/339/300/300"], ["created_at", "2020-02-02 23:21:20.198687"], ["updated_at", "2020-02-02 23:21:20.198687"], ["csv_file_id", 97]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/693/300/300"], ["created_at", "2020-02-02 23:21:20.201985"], ["updated_at", "2020-02-02 23:21:20.201985"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/198/300/300"], ["created_at", "2020-02-02 23:21:20.204483"], ["updated_at", "2020-02-02 23:21:20.204483"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/964/300/300"], ["created_at", "2020-02-02 23:21:20.207076"], ["updated_at", "2020-02-02 23:21:20.207076"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/59/300/300"], ["created_at", "2020-02-02 23:21:20.209798"], ["updated_at", "2020-02-02 23:21:20.209798"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/160/300/300"], ["created_at", "2020-02-02 23:21:20.214056"], ["updated_at", "2020-02-02 23:21:20.214056"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/737/300/300"], ["created_at", "2020-02-02 23:21:20.217322"], ["updated_at", "2020-02-02 23:21:20.217322"], ["csv_file_id", 97]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/891/300/300"], ["created_at", "2020-02-02 23:21:20.222183"], ["updated_at", "2020-02-02 23:21:20.222183"], ["csv_file_id", 97]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pictures/97/1?grayscale=1
+Completed 302 Found in 190ms (ActiveRecord: 82.3ms)
+
+
+Started GET "/pictures/97/1?grayscale=1" for ::1 at 2020-02-02 18:21:20 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"grayscale"=>"1", "csv_file_id"=>"97", "page"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 97], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 97], ["LIMIT", 25], ["OFFSET", 25]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/csv_file?grayscale=1" for ::1 at 2020-02-02 18:21:39 -0500
+Processing by CsvFileController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c602f6e28 @tempfile=#<Tempfile:/var/folders/1_/pk6p99d94sj385sd_hy8th5w0000gn/T/RackMultipart20200202-67945-1thd72g.csv>, @original_filename="test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.csv\"\r\nContent-Type: text/csv\r\n">, "grayscale"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "csv_files" ("csv_file_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["csv_file_name", "test.csv"], ["created_at", "2020-02-02 23:21:39.407331"], ["updated_at", "2020-02-02 23:21:39.407331"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/12/300/200"], ["created_at", "2020-02-02 23:21:39.412296"], ["updated_at", "2020-02-02 23:21:39.412296"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/434/300/200"], ["created_at", "2020-02-02 23:21:39.416749"], ["updated_at", "2020-02-02 23:21:39.416749"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/966/300/200"], ["created_at", "2020-02-02 23:21:39.419450"], ["updated_at", "2020-02-02 23:21:39.419450"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/300/200"], ["created_at", "2020-02-02 23:21:39.422363"], ["updated_at", "2020-02-02 23:21:39.422363"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/180/300/200"], ["created_at", "2020-02-02 23:21:39.425890"], ["updated_at", "2020-02-02 23:21:39.425890"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/342/300/200"], ["created_at", "2020-02-02 23:21:39.429297"], ["updated_at", "2020-02-02 23:21:39.429297"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/467/300/200"], ["created_at", "2020-02-02 23:21:39.432143"], ["updated_at", "2020-02-02 23:21:39.432143"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/389/300/200"], ["created_at", "2020-02-02 23:21:39.434643"], ["updated_at", "2020-02-02 23:21:39.434643"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/525/300/200"], ["created_at", "2020-02-02 23:21:39.437096"], ["updated_at", "2020-02-02 23:21:39.437096"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/300/200"], ["created_at", "2020-02-02 23:21:39.439406"], ["updated_at", "2020-02-02 23:21:39.439406"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/256/100/100"], ["created_at", "2020-02-02 23:21:39.441951"], ["updated_at", "2020-02-02 23:21:39.441951"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/70/100/100"], ["created_at", "2020-02-02 23:21:39.444580"], ["updated_at", "2020-02-02 23:21:39.444580"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/844/100/100"], ["created_at", "2020-02-02 23:21:39.448140"], ["updated_at", "2020-02-02 23:21:39.448140"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/130/100/100"], ["created_at", "2020-02-02 23:21:39.450931"], ["updated_at", "2020-02-02 23:21:39.450931"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/328/100/100"], ["created_at", "2020-02-02 23:21:39.453540"], ["updated_at", "2020-02-02 23:21:39.453540"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/886/100/100"], ["created_at", "2020-02-02 23:21:39.455967"], ["updated_at", "2020-02-02 23:21:39.455967"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/218/100/100"], ["created_at", "2020-02-02 23:21:39.459096"], ["updated_at", "2020-02-02 23:21:39.459096"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/29/100/100"], ["created_at", "2020-02-02 23:21:39.462254"], ["updated_at", "2020-02-02 23:21:39.462254"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/639/100/100"], ["created_at", "2020-02-02 23:21:39.465055"], ["updated_at", "2020-02-02 23:21:39.465055"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/396/100/100"], ["created_at", "2020-02-02 23:21:39.467417"], ["updated_at", "2020-02-02 23:21:39.467417"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/20/250/250"], ["created_at", "2020-02-02 23:21:39.469688"], ["updated_at", "2020-02-02 23:21:39.469688"], ["csv_file_id", 98]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/925/250/250"], ["created_at", "2020-02-02 23:21:39.472072"], ["updated_at", "2020-02-02 23:21:39.472072"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/872/250/250"], ["created_at", "2020-02-02 23:21:39.474689"], ["updated_at", "2020-02-02 23:21:39.474689"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/629/250/250"], ["created_at", "2020-02-02 23:21:39.477476"], ["updated_at", "2020-02-02 23:21:39.477476"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1074/250/250"], ["created_at", "2020-02-02 23:21:39.480716"], ["updated_at", "2020-02-02 23:21:39.480716"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/341/250/250"], ["created_at", "2020-02-02 23:21:39.483455"], ["updated_at", "2020-02-02 23:21:39.483455"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/267/250/250"], ["created_at", "2020-02-02 23:21:39.486154"], ["updated_at", "2020-02-02 23:21:39.486154"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1021/250/250"], ["created_at", "2020-02-02 23:21:39.488822"], ["updated_at", "2020-02-02 23:21:39.488822"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/928/250/250"], ["created_at", "2020-02-02 23:21:39.491958"], ["updated_at", "2020-02-02 23:21:39.491958"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/238/250/250"], ["created_at", "2020-02-02 23:21:39.494618"], ["updated_at", "2020-02-02 23:21:39.494618"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/400/200"], ["created_at", "2020-02-02 23:21:39.498021"], ["updated_at", "2020-02-02 23:21:39.498021"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/319/400/200"], ["created_at", "2020-02-02 23:21:39.501343"], ["updated_at", "2020-02-02 23:21:39.501343"], ["csv_file_id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1059/400/200"], ["created_at", "2020-02-02 23:21:39.504019"], ["updated_at", "2020-02-02 23:21:39.504019"], ["csv_file_id", 98]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/71/400/200"], ["created_at", "2020-02-02 23:21:39.508121"], ["updated_at", "2020-02-02 23:21:39.508121"], ["csv_file_id", 98]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/400/200"], ["created_at", "2020-02-02 23:21:39.514221"], ["updated_at", "2020-02-02 23:21:39.514221"], ["csv_file_id", 98]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/118/400/200"], ["created_at", "2020-02-02 23:21:39.519567"], ["updated_at", "2020-02-02 23:21:39.519567"], ["csv_file_id", 98]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/634/400/200"], ["created_at", "2020-02-02 23:21:39.524238"], ["updated_at", "2020-02-02 23:21:39.524238"], ["csv_file_id", 98]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1065/400/200"], ["created_at", "2020-02-02 23:21:39.529782"], ["updated_at", "2020-02-02 23:21:39.529782"], ["csv_file_id", 98]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1073/400/200"], ["created_at", "2020-02-02 23:21:39.534319"], ["updated_at", "2020-02-02 23:21:39.534319"], ["csv_file_id", 98]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/323/400/200"], ["created_at", "2020-02-02 23:21:39.538277"], ["updated_at", "2020-02-02 23:21:39.538277"], ["csv_file_id", 98]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/660/300/300"], ["created_at", "2020-02-02 23:21:39.542052"], ["updated_at", "2020-02-02 23:21:39.542052"], ["csv_file_id", 98]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/511/300/300"], ["created_at", "2020-02-02 23:21:39.546742"], ["updated_at", "2020-02-02 23:21:39.546742"], ["csv_file_id", 98]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/339/300/300"], ["created_at", "2020-02-02 23:21:39.551222"], ["updated_at", "2020-02-02 23:21:39.551222"], ["csv_file_id", 98]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/693/300/300"], ["created_at", "2020-02-02 23:21:39.555116"], ["updated_at", "2020-02-02 23:21:39.555116"], ["csv_file_id", 98]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/198/300/300"], ["created_at", "2020-02-02 23:21:39.559139"], ["updated_at", "2020-02-02 23:21:39.559139"], ["csv_file_id", 98]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/964/300/300"], ["created_at", "2020-02-02 23:21:39.563643"], ["updated_at", "2020-02-02 23:21:39.563643"], ["csv_file_id", 98]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/59/300/300"], ["created_at", "2020-02-02 23:21:39.567124"], ["updated_at", "2020-02-02 23:21:39.567124"], ["csv_file_id", 98]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/160/300/300"], ["created_at", "2020-02-02 23:21:39.570506"], ["updated_at", "2020-02-02 23:21:39.570506"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/737/300/300"], ["created_at", "2020-02-02 23:21:39.573654"], ["updated_at", "2020-02-02 23:21:39.573654"], ["csv_file_id", 98]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/891/300/300"], ["created_at", "2020-02-02 23:21:39.576763"], ["updated_at", "2020-02-02 23:21:39.576763"], ["csv_file_id", 98]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pictures/98/1?grayscale=1
+Completed 302 Found in 173ms (ActiveRecord: 67.6ms)
+
+
+Started GET "/pictures/98/1?grayscale=1" for ::1 at 2020-02-02 18:21:39 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"grayscale"=>"1", "csv_file_id"=>"98", "page"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 98], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 98], ["LIMIT", 25], ["OFFSET", 25]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/csv_file" for ::1 at 2020-02-02 18:23:46 -0500
+Processing by CsvFileController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c60a4a648 @tempfile=#<Tempfile:/var/folders/1_/pk6p99d94sj385sd_hy8th5w0000gn/T/RackMultipart20200202-67945-1nlioxk.csv>, @original_filename="test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.csv\"\r\nContent-Type: text/csv\r\n">}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "csv_files" ("csv_file_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["csv_file_name", "test.csv"], ["created_at", "2020-02-02 23:23:46.134776"], ["updated_at", "2020-02-02 23:23:46.134776"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/12/300/200"], ["created_at", "2020-02-02 23:23:46.139158"], ["updated_at", "2020-02-02 23:23:46.139158"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/434/300/200"], ["created_at", "2020-02-02 23:23:46.141992"], ["updated_at", "2020-02-02 23:23:46.141992"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/966/300/200"], ["created_at", "2020-02-02 23:23:46.144837"], ["updated_at", "2020-02-02 23:23:46.144837"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/300/200"], ["created_at", "2020-02-02 23:23:46.147139"], ["updated_at", "2020-02-02 23:23:46.147139"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/180/300/200"], ["created_at", "2020-02-02 23:23:46.149742"], ["updated_at", "2020-02-02 23:23:46.149742"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/342/300/200"], ["created_at", "2020-02-02 23:23:46.153173"], ["updated_at", "2020-02-02 23:23:46.153173"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/467/300/200"], ["created_at", "2020-02-02 23:23:46.156266"], ["updated_at", "2020-02-02 23:23:46.156266"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/389/300/200"], ["created_at", "2020-02-02 23:23:46.158571"], ["updated_at", "2020-02-02 23:23:46.158571"], ["csv_file_id", 99]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/525/300/200"], ["created_at", "2020-02-02 23:23:46.160797"], ["updated_at", "2020-02-02 23:23:46.160797"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/300/200"], ["created_at", "2020-02-02 23:23:46.163107"], ["updated_at", "2020-02-02 23:23:46.163107"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/256/100/100"], ["created_at", "2020-02-02 23:23:46.165400"], ["updated_at", "2020-02-02 23:23:46.165400"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/70/100/100"], ["created_at", "2020-02-02 23:23:46.167807"], ["updated_at", "2020-02-02 23:23:46.167807"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/844/100/100"], ["created_at", "2020-02-02 23:23:46.170232"], ["updated_at", "2020-02-02 23:23:46.170232"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/130/100/100"], ["created_at", "2020-02-02 23:23:46.173218"], ["updated_at", "2020-02-02 23:23:46.173218"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/328/100/100"], ["created_at", "2020-02-02 23:23:46.175929"], ["updated_at", "2020-02-02 23:23:46.175929"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/886/100/100"], ["created_at", "2020-02-02 23:23:46.178436"], ["updated_at", "2020-02-02 23:23:46.178436"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/218/100/100"], ["created_at", "2020-02-02 23:23:46.180968"], ["updated_at", "2020-02-02 23:23:46.180968"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/29/100/100"], ["created_at", "2020-02-02 23:23:46.183780"], ["updated_at", "2020-02-02 23:23:46.183780"], ["csv_file_id", 99]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/639/100/100"], ["created_at", "2020-02-02 23:23:46.187456"], ["updated_at", "2020-02-02 23:23:46.187456"], ["csv_file_id", 99]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/396/100/100"], ["created_at", "2020-02-02 23:23:46.190614"], ["updated_at", "2020-02-02 23:23:46.190614"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/20/250/250"], ["created_at", "2020-02-02 23:23:46.193071"], ["updated_at", "2020-02-02 23:23:46.193071"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/925/250/250"], ["created_at", "2020-02-02 23:23:46.195343"], ["updated_at", "2020-02-02 23:23:46.195343"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/872/250/250"], ["created_at", "2020-02-02 23:23:46.197688"], ["updated_at", "2020-02-02 23:23:46.197688"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/629/250/250"], ["created_at", "2020-02-02 23:23:46.200124"], ["updated_at", "2020-02-02 23:23:46.200124"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1074/250/250"], ["created_at", "2020-02-02 23:23:46.202849"], ["updated_at", "2020-02-02 23:23:46.202849"], ["csv_file_id", 99]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/341/250/250"], ["created_at", "2020-02-02 23:23:46.206598"], ["updated_at", "2020-02-02 23:23:46.206598"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/267/250/250"], ["created_at", "2020-02-02 23:23:46.209542"], ["updated_at", "2020-02-02 23:23:46.209542"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1021/250/250"], ["created_at", "2020-02-02 23:23:46.212296"], ["updated_at", "2020-02-02 23:23:46.212296"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/928/250/250"], ["created_at", "2020-02-02 23:23:46.214876"], ["updated_at", "2020-02-02 23:23:46.214876"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/238/250/250"], ["created_at", "2020-02-02 23:23:46.217649"], ["updated_at", "2020-02-02 23:23:46.217649"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/385/400/200"], ["created_at", "2020-02-02 23:23:46.220442"], ["updated_at", "2020-02-02 23:23:46.220442"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/319/400/200"], ["created_at", "2020-02-02 23:23:46.223074"], ["updated_at", "2020-02-02 23:23:46.223074"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1059/400/200"], ["created_at", "2020-02-02 23:23:46.225407"], ["updated_at", "2020-02-02 23:23:46.225407"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/71/400/200"], ["created_at", "2020-02-02 23:23:46.227690"], ["updated_at", "2020-02-02 23:23:46.227690"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/637/400/200"], ["created_at", "2020-02-02 23:23:46.230174"], ["updated_at", "2020-02-02 23:23:46.230174"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/118/400/200"], ["created_at", "2020-02-02 23:23:46.232483"], ["updated_at", "2020-02-02 23:23:46.232483"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/634/400/200"], ["created_at", "2020-02-02 23:23:46.234996"], ["updated_at", "2020-02-02 23:23:46.234996"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1065/400/200"], ["created_at", "2020-02-02 23:23:46.237903"], ["updated_at", "2020-02-02 23:23:46.237903"], ["csv_file_id", 99]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/1073/400/200"], ["created_at", "2020-02-02 23:23:46.241337"], ["updated_at", "2020-02-02 23:23:46.241337"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/323/400/200"], ["created_at", "2020-02-02 23:23:46.244223"], ["updated_at", "2020-02-02 23:23:46.244223"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/660/300/300"], ["created_at", "2020-02-02 23:23:46.246844"], ["updated_at", "2020-02-02 23:23:46.246844"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/511/300/300"], ["created_at", "2020-02-02 23:23:46.249535"], ["updated_at", "2020-02-02 23:23:46.249535"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/339/300/300"], ["created_at", "2020-02-02 23:23:46.252887"], ["updated_at", "2020-02-02 23:23:46.252887"], ["csv_file_id", 99]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/693/300/300"], ["created_at", "2020-02-02 23:23:46.256009"], ["updated_at", "2020-02-02 23:23:46.256009"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/198/300/300"], ["created_at", "2020-02-02 23:23:46.258578"], ["updated_at", "2020-02-02 23:23:46.258578"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/964/300/300"], ["created_at", "2020-02-02 23:23:46.260921"], ["updated_at", "2020-02-02 23:23:46.260921"], ["csv_file_id", 99]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/59/300/300"], ["created_at", "2020-02-02 23:23:46.263243"], ["updated_at", "2020-02-02 23:23:46.263243"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/160/300/300"], ["created_at", "2020-02-02 23:23:46.265661"], ["updated_at", "2020-02-02 23:23:46.265661"], ["csv_file_id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/737/300/300"], ["created_at", "2020-02-02 23:23:46.268113"], ["updated_at", "2020-02-02 23:23:46.268113"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("url", "created_at", "updated_at", "csv_file_id") VALUES (?, ?, ?, ?)[0m  [["url", "https://picsum.photos/id/891/300/300"], ["created_at", "2020-02-02 23:23:46.270968"], ["updated_at", "2020-02-02 23:23:46.270968"], ["csv_file_id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pictures/99/1
+Completed 302 Found in 141ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/pictures/99/1" for ::1 at 2020-02-02 18:23:46 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"csv_file_id"=>"99", "page"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 99], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 99], ["LIMIT", 25], ["OFFSET", 25]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pictures/99/2" for ::1 at 2020-02-02 18:24:58 -0500
+Processing by PictureController#show_batch as HTML
+  Parameters: {"csv_file_id"=>"99", "page"=>"2"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  "pictures"."url" FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 99], ["LIMIT", 25], ["OFFSET", 25]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."csv_file_id" = ? LIMIT ? OFFSET ?[0m  [["csv_file_id", 99], ["LIMIT", 25], ["OFFSET", 50]]
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+

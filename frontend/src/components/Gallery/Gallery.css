@@ -9,3 +9,9 @@
 .picture {
   margin: 1% 0;
 }
+
+.picture-container {
+  display: flex;
+	align-items: center;
+  justify-content: center;
+}

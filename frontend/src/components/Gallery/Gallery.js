@@ -17,7 +17,7 @@ class Gallery extends React.Component {
         <div className="row gallery-container">
           { this.props.images.map((url, key) => {
             return (
-              <div className="col-3">
+              <div className="picture-container col-xs-12 col-sm-12 col-md-6 col-lg-3">
                 <img className="picture" src={url} key={key} />
               </div>
             )
