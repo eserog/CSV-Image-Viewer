@@ -1,0 +1,13 @@
+.grayscale {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grayscale-checkbox {
+	margin: 0 0 0 3px;
+}
+
+.submit-btn {
+	margin-left: 3px;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { uploadCsv, toggleGrayscale } from '../../actions/imageActions';
 
+import './FileInput.css';
+
 class FileInput extends React.Component {
   constructor(props) {
     super(props);
@@ -33,16 +35,17 @@ class FileInput extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <label>Upload file: <input type="file" ref={this.fileInput} /></label>
 
-            <label>Grayscale:
+            <div className="grayscale">
+              <span>Grayscale: </span>
               <input
                 name='grayscale'
                 type='checkbox'
                 checked={grayscale}
-                className='form-check-input'
+                className='grayscale-checkbox'
                 onChange={() => toggleGrayscale(grayscale)}
               />
-            </label>
-            <button type='submit'>Submit</button>
+              </div>
+            <button className='submit-btn' type='submit'>Submit</button>
           </form>
         </div>
       </div>
