@@ -3,7 +3,6 @@ class PictureController < ApplicationController
   NULLABLE_VALUES = ["null", "0"]
 
   def show_batch
-    binding.pry
   	results = PictureQueryBuilder.build(
       csv_file_id: picture_params[:csv_file_id],
       page: picture_params[:page] || 1,
