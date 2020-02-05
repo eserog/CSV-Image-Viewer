@@ -1,4 +1,4 @@
-# goTennaEsaSerog
+# CSV Image Viewer -- full stack project
 
 Hello! If you're reading this (which hopefully you are) that means you're reviewing my submission! In this directory contains 2 subdirectories that implement this project to the best of my knowledge. There's a backend project written in rails (specifically rails 6.0.2.1 with ruby 2.6). Then there is a frontend that I implemented with react/redux that should be fairly easy to start with yarn. For the frontend side of things I used npm 6.11.3, and yarn 1.19.1.
 
