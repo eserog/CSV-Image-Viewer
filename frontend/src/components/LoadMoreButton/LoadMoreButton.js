@@ -6,11 +6,11 @@ import './LoadMoreButton.css';
 
 class LoadMoreButton extends React.Component {
   render() {
-    const { images, fetchImages, page, batchId, grayscale, dataInNextSet } = this.props;
+    const { images, fetchImages, page, batchId, grayscale, dataInNextSet, width, height } = this.props;
     return (
       <div className="row load-more-container">
         <div className="col-12">
-          { dataInNextSet ? <button className='btn btn-primary' type='submit' onClick={() => fetchImages(batchId, page + 1, grayscale)}>Load More Images</button> : null }
+          { dataInNextSet ? <button className='btn btn-primary' type='submit' onClick={() => fetchImages({ batchId: batchId, page: page + 1, grayscale: grayscale })}>Load More Images</button> : null }
         </div>
       </div>
     )
@@ -18,14 +18,16 @@ class LoadMoreButton extends React.Component {
 }
 
 function mapStateToProps(state) {
-  const { images, batchId, page, grayscale, dataInNextSet } = state.imageState;
+  const { images, batchId, page, grayscale, dataInNextSet, width, height } = state.imageState;
 
   return {
     images: images,
     batchId: batchId,
     page: page,
     grayscale: grayscale,
-    dataInNextSet: dataInNextSet
+    dataInNextSet: dataInNextSet,
+    width: width,
+    height: height
   }
 }
 

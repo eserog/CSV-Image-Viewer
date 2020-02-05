@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200201032610) do
+ActiveRecord::Schema.define(version: 20200204235157) do
 
   create_table "csv_files", force: :cascade do |t|
     t.string "csv_file_name"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20200201032610) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "csv_file_id"
+    t.integer "width"
+    t.integer "height"
     t.index ["csv_file_id"], name: "index_pictures_on_csv_file_id"
   end
 

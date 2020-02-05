@@ -1,3 +1,5 @@
 export const FETCH_IMAGES = 'FETCH_PICTURES';
 export const UPLOAD_CSV = 'UPLOAD_CSV';
 export const TOGGLE_GRAYSCALE = 'TOGGLE_GRAYSCALE';
+export const UPDATE_WIDTH = 'UPDATE_WIDTH';
+export const UPDATE_HEIGHT = 'UPDATE_HEIGHT';

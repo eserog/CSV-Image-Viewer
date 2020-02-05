@@ -1,11 +1,17 @@
 class Picture < ApplicationRecord
 	belongs_to :csv_file
 
+	before_save :extract_dimensions
 
-	def get_dimensions
+	private
+
+	def extract_dimensions
 		parsed_url = url.split("/id/")
-    params = parsed_url.last.split("/")
-    
-    params.length == 3 ? { width: params[1], height: params[2] }.with_indifferent_access  : nil
+    	url_params = parsed_url.last.split("/")
+    	
+      if url_params.length == 3
+        self.width = url_params[1]
+        self.height = url_params[2]
+      end
 	end
 end

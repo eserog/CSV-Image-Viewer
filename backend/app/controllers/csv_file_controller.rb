@@ -7,7 +7,13 @@ class CsvFileController < ApplicationController
         form = CsvForm.new(data[:pictures], data[:file_name])
 
         if form.save
-          redirect_to show_batch_path(csv_file_id: form.csv_file.id, page: 1, grayscale: csv_params[:grayscale])
+          redirect_to show_batch_path(
+            csv_file_id: form.csv_file.id,
+            page: 1,
+            grayscale: csv_params[:grayscale],
+            width: csv_params[:width],
+            height: csv_params[:height]
+          )
         else
           render json: { code: 500, message: "something went wrong"}
         end
@@ -22,7 +28,7 @@ class CsvFileController < ApplicationController
 	private
 
 	def csv_params
-    params.permit(:file, :id, :grayscale)
+    params.permit(:file, :id, :grayscale, :width, :height)
 	end
 
 end

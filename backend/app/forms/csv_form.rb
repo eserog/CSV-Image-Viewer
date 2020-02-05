@@ -13,10 +13,7 @@ class CsvForm
     return false if invalid?
 
     @csv_file = CsvFile.create(csv_file_name: @csv_file_name)
-    @pictures.each do |picture|
-      csv_file.pictures << Picture.create(url: picture)
-    end
-
+    @pictures.each { |picture| csv_file.pictures << Picture.create(url: picture) }
     true
   end
 end
