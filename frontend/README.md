@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+NPM AND YARN VERSIONS: npm 6.11.3, and yarn 1.19.1
+MAKE SURE YOU RUN THIS APP AFTER YOU START UP THE BACK END!! Otherwise the api calls will not work since they are hardcoded to use port 3000. In a full development project this is where we would typically use env variables.
+
 ## Available Scripts
 
 In the project directory, you can run:

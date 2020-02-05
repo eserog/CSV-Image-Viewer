@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RAILS/RUBY VERSIONS: rails 6.0.2.1 with ruby 2.6
 
-Things you may want to cover:
+INSTALLATION: install gems with `bundle install` in this directory
 
-* Ruby version
+TO RUN: run `bundle exec rails s` in this directory 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TO RUN SPECS: run `bundle exec rspec spec` in this directory
