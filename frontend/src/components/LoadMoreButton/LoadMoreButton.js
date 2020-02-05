@@ -10,7 +10,7 @@ class LoadMoreButton extends React.Component {
     return (
       <div className="row load-more-container">
         <div className="col-12">
-          { dataInNextSet ? <button className='btn btn-primary' type='submit' onClick={() => fetchImages({ batchId: batchId, page: page + 1, grayscale: grayscale })}>Load More Images</button> : null }
+          { dataInNextSet ? <button className='btn btn-primary' type='submit' onClick={() => fetchImages(batchId, {page: page + 1, grayscale: grayscale })}>Load More Images</button> : null }
         </div>
       </div>
     )

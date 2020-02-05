@@ -2,6 +2,7 @@ import { FETCH_IMAGES, UPLOAD_CSV, TOGGLE_GRAYSCALE, UPDATE_HEIGHT, UPDATE_WIDTH
 import { getImages, postCsv } from '../services/CsvService';
 
 export const fetchImages = (batch_id, options) => dispatch => {
+  debugger;
   getImages(batch_id, options).then(response => {
     dispatch({
       type: FETCH_IMAGES,
