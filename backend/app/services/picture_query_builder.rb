@@ -30,7 +30,7 @@ class PictureQueryBuilder
     
 
     image_urls = @filtered_pictures.map(&:url)
-    image_urls = image_urls.map { |url| url.concat("?grayscale") } if @grayscale
+    image_urls = image_urls.map { |url| url.concat(Picture::GRAYSCALE) } if @grayscale
     
     { images: image_urls, batch_id: @csv_file_id, data_in_next_set: next_page_count > 0, page: @page}
   end

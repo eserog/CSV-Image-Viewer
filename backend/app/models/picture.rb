@@ -3,6 +3,8 @@ class Picture < ApplicationRecord
 
 	before_save :extract_dimensions
 
+	GRAYSCALE = "?grayscale"
+
 	private
 
 	def extract_dimensions
